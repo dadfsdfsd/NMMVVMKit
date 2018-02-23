@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C1F86F8203FC72F00DEEE22 /* NMMVVMKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1F86F6203FC72F00DEEE22 /* NMMVVMKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C1F8744203FC8CE00DEEE22 /* BaseControllerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F8718203FC8CD00DEEE22 /* BaseControllerCollectionViewCell.m */; };
+		3C1F8745203FC8CE00DEEE22 /* BaseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F8719203FC8CD00DEEE22 /* BaseCollectionViewCell.m */; };
+		3C1F8746203FC8CE00DEEE22 /* BaseControllerCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1F871A203FC8CD00DEEE22 /* BaseControllerCollectionViewCell.h */; };
+		3C1F8747203FC8CE00DEEE22 /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F871B203FC8CD00DEEE22 /* BaseViewModel.m */; };
+		3C1F8748203FC8CE00DEEE22 /* BaseCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1F871C203FC8CD00DEEE22 /* BaseCollectionViewCell.h */; };
+		3C1F8749203FC8CE00DEEE22 /* BaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F871D203FC8CD00DEEE22 /* BaseCollectionViewController.m */; };
+		3C1F874A203FC8CE00DEEE22 /* MVVMViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1F871E203FC8CD00DEEE22 /* MVVMViewController.h */; };
+		3C1F874B203FC8CE00DEEE22 /* BaseViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1F871F203FC8CE00DEEE22 /* BaseViewModel.h */; };
+		3C1F874C203FC8CE00DEEE22 /* BaseSectionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1F8720203FC8CE00DEEE22 /* BaseSectionController.h */; };
+		3C1F874D203FC8CE00DEEE22 /* BaseDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F8722203FC8CE00DEEE22 /* BaseDataModel.m */; };
+		3C1F874E203FC8CE00DEEE22 /* BaseSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F8723203FC8CE00DEEE22 /* BaseSectionModel.m */; };
+		3C1F8750203FC8CE00DEEE22 /* BaseCellModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1F8725203FC8CE00DEEE22 /* BaseCellModel.h */; };
+		3C1F8751203FC8CE00DEEE22 /* BaseDataCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F8726203FC8CE00DEEE22 /* BaseDataCellModel.m */; };
+		3C1F8753203FC8CE00DEEE22 /* BaseSectionModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1F8728203FC8CE00DEEE22 /* BaseSectionModel.h */; };
+		3C1F8755203FC8CE00DEEE22 /* BaseDataCellModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1F872A203FC8CE00DEEE22 /* BaseDataCellModel.h */; };
+		3C1F8756203FC8CE00DEEE22 /* BaseCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F872B203FC8CE00DEEE22 /* BaseCellModel.m */; };
+		3C1F8757203FC8CE00DEEE22 /* BaseSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F872C203FC8CE00DEEE22 /* BaseSectionController.m */; };
+		3C1F8758203FC8CE00DEEE22 /* BaseCollectionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1F872D203FC8CE00DEEE22 /* BaseCollectionViewController.h */; };
+		3C1F8759203FC8CE00DEEE22 /* NSArray+Sequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F872F203FC8CE00DEEE22 /* NSArray+Sequence.m */; };
+		3C1F875A203FC8CE00DEEE22 /* NSString+UUID.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1F8730203FC8CE00DEEE22 /* NSString+UUID.h */; };
+		3C1F875B203FC8CE00DEEE22 /* NSArray+Sequence.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1F8731203FC8CE00DEEE22 /* NSArray+Sequence.h */; };
+		3C1F875C203FC8CE00DEEE22 /* DynamicObservable.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1F8733203FC8CE00DEEE22 /* DynamicObservable.h */; };
+		3C1F875D203FC8CE00DEEE22 /* NSMutableArray+Move.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F8734203FC8CE00DEEE22 /* NSMutableArray+Move.m */; };
+		3C1F875E203FC8CE00DEEE22 /* ObservationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F8735203FC8CE00DEEE22 /* ObservationManager.m */; };
+		3C1F875F203FC8CE00DEEE22 /* ValueChange.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1F8736203FC8CE00DEEE22 /* ValueChange.h */; };
+		3C1F8760203FC8CE00DEEE22 /* Observation.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1F8737203FC8CE00DEEE22 /* Observation.h */; };
+		3C1F8761203FC8CE00DEEE22 /* EventPublisher.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1F8738203FC8CE00DEEE22 /* EventPublisher.h */; };
+		3C1F8762203FC8CE00DEEE22 /* Observable.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F8739203FC8CE00DEEE22 /* Observable.m */; };
+		3C1F8763203FC8CE00DEEE22 /* NSObject+ObservationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F873A203FC8CE00DEEE22 /* NSObject+ObservationManager.m */; };
+		3C1F8764203FC8CE00DEEE22 /* DynamicObservable.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F873B203FC8CE00DEEE22 /* DynamicObservable.m */; };
+		3C1F8765203FC8CE00DEEE22 /* NSMutableArray+Move.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1F873C203FC8CE00DEEE22 /* NSMutableArray+Move.h */; };
+		3C1F8766203FC8CE00DEEE22 /* ValueChange.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F873D203FC8CE00DEEE22 /* ValueChange.m */; };
+		3C1F8767203FC8CE00DEEE22 /* ObservationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1F873E203FC8CE00DEEE22 /* ObservationManager.h */; };
+		3C1F8768203FC8CE00DEEE22 /* NSObject+ObservationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1F873F203FC8CE00DEEE22 /* NSObject+ObservationManager.h */; };
+		3C1F8769203FC8CE00DEEE22 /* EventPublisher.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F8740203FC8CE00DEEE22 /* EventPublisher.m */; };
+		3C1F876A203FC8CE00DEEE22 /* Observable.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1F8741203FC8CE00DEEE22 /* Observable.h */; };
+		3C1F876B203FC8CE00DEEE22 /* Observation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F8742203FC8CE00DEEE22 /* Observation.m */; };
+		3C1F876C203FC8CE00DEEE22 /* NSString+UUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F8743203FC8CE00DEEE22 /* NSString+UUID.m */; };
+		3C1F876F203FC91C00DEEE22 /* BaseDataModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1F876D203FC91B00DEEE22 /* BaseDataModel.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3C1F86F3203FC72F00DEEE22 /* NMMVVMKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NMMVVMKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C1F86F6203FC72F00DEEE22 /* NMMVVMKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMMVVMKit.h; sourceTree = "<group>"; };
+		3C1F86F7203FC72F00DEEE22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C1F8718203FC8CD00DEEE22 /* BaseControllerCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseControllerCollectionViewCell.m; sourceTree = "<group>"; };
+		3C1F8719203FC8CD00DEEE22 /* BaseCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionViewCell.m; sourceTree = "<group>"; };
+		3C1F871A203FC8CD00DEEE22 /* BaseControllerCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseControllerCollectionViewCell.h; sourceTree = "<group>"; };
+		3C1F871B203FC8CD00DEEE22 /* BaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewModel.m; sourceTree = "<group>"; };
+		3C1F871C203FC8CD00DEEE22 /* BaseCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCollectionViewCell.h; sourceTree = "<group>"; };
+		3C1F871D203FC8CD00DEEE22 /* BaseCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionViewController.m; sourceTree = "<group>"; };
+		3C1F871E203FC8CD00DEEE22 /* MVVMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVVMViewController.h; sourceTree = "<group>"; };
+		3C1F871F203FC8CE00DEEE22 /* BaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewModel.h; sourceTree = "<group>"; };
+		3C1F8720203FC8CE00DEEE22 /* BaseSectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSectionController.h; sourceTree = "<group>"; };
+		3C1F8722203FC8CE00DEEE22 /* BaseDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDataModel.m; sourceTree = "<group>"; };
+		3C1F8723203FC8CE00DEEE22 /* BaseSectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSectionModel.m; sourceTree = "<group>"; };
+		3C1F8725203FC8CE00DEEE22 /* BaseCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCellModel.h; sourceTree = "<group>"; };
+		3C1F8726203FC8CE00DEEE22 /* BaseDataCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDataCellModel.m; sourceTree = "<group>"; };
+		3C1F8728203FC8CE00DEEE22 /* BaseSectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSectionModel.h; sourceTree = "<group>"; };
+		3C1F872A203FC8CE00DEEE22 /* BaseDataCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDataCellModel.h; sourceTree = "<group>"; };
+		3C1F872B203FC8CE00DEEE22 /* BaseCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCellModel.m; sourceTree = "<group>"; };
+		3C1F872C203FC8CE00DEEE22 /* BaseSectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSectionController.m; sourceTree = "<group>"; };
+		3C1F872D203FC8CE00DEEE22 /* BaseCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCollectionViewController.h; sourceTree = "<group>"; };
+		3C1F872F203FC8CE00DEEE22 /* NSArray+Sequence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Sequence.m"; sourceTree = "<group>"; };
+		3C1F8730203FC8CE00DEEE22 /* NSString+UUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+UUID.h"; sourceTree = "<group>"; };
+		3C1F8731203FC8CE00DEEE22 /* NSArray+Sequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Sequence.h"; sourceTree = "<group>"; };
+		3C1F8733203FC8CE00DEEE22 /* DynamicObservable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicObservable.h; sourceTree = "<group>"; };
+		3C1F8734203FC8CE00DEEE22 /* NSMutableArray+Move.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Move.m"; sourceTree = "<group>"; };
+		3C1F8735203FC8CE00DEEE22 /* ObservationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObservationManager.m; sourceTree = "<group>"; };
+		3C1F8736203FC8CE00DEEE22 /* ValueChange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValueChange.h; sourceTree = "<group>"; };
+		3C1F8737203FC8CE00DEEE22 /* Observation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Observation.h; sourceTree = "<group>"; };
+		3C1F8738203FC8CE00DEEE22 /* EventPublisher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventPublisher.h; sourceTree = "<group>"; };
+		3C1F8739203FC8CE00DEEE22 /* Observable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Observable.m; sourceTree = "<group>"; };
+		3C1F873A203FC8CE00DEEE22 /* NSObject+ObservationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ObservationManager.m"; sourceTree = "<group>"; };
+		3C1F873B203FC8CE00DEEE22 /* DynamicObservable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicObservable.m; sourceTree = "<group>"; };
+		3C1F873C203FC8CE00DEEE22 /* NSMutableArray+Move.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Move.h"; sourceTree = "<group>"; };
+		3C1F873D203FC8CE00DEEE22 /* ValueChange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValueChange.m; sourceTree = "<group>"; };
+		3C1F873E203FC8CE00DEEE22 /* ObservationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObservationManager.h; sourceTree = "<group>"; };
+		3C1F873F203FC8CE00DEEE22 /* NSObject+ObservationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ObservationManager.h"; sourceTree = "<group>"; };
+		3C1F8740203FC8CE00DEEE22 /* EventPublisher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventPublisher.m; sourceTree = "<group>"; };
+		3C1F8741203FC8CE00DEEE22 /* Observable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Observable.h; sourceTree = "<group>"; };
+		3C1F8742203FC8CE00DEEE22 /* Observation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Observation.m; sourceTree = "<group>"; };
+		3C1F8743203FC8CE00DEEE22 /* NSString+UUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UUID.m"; sourceTree = "<group>"; };
+		3C1F876D203FC91B00DEEE22 /* BaseDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDataModel.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C1F86EF203FC72F00DEEE22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C1F86E9203FC72F00DEEE22 = {
+			isa = PBXGroup;
+			children = (
+				3C1F86F5203FC72F00DEEE22 /* NMMVVMKit */,
+				3C1F86F4203FC72F00DEEE22 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3C1F86F4203FC72F00DEEE22 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C1F86F3203FC72F00DEEE22 /* NMMVVMKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C1F86F5203FC72F00DEEE22 /* NMMVVMKit */ = {
+			isa = PBXGroup;
+			children = (
+				3C1F871C203FC8CD00DEEE22 /* BaseCollectionViewCell.h */,
+				3C1F8719203FC8CD00DEEE22 /* BaseCollectionViewCell.m */,
+				3C1F872D203FC8CE00DEEE22 /* BaseCollectionViewController.h */,
+				3C1F871D203FC8CD00DEEE22 /* BaseCollectionViewController.m */,
+				3C1F871A203FC8CD00DEEE22 /* BaseControllerCollectionViewCell.h */,
+				3C1F8718203FC8CD00DEEE22 /* BaseControllerCollectionViewCell.m */,
+				3C1F8720203FC8CE00DEEE22 /* BaseSectionController.h */,
+				3C1F872C203FC8CE00DEEE22 /* BaseSectionController.m */,
+				3C1F871F203FC8CE00DEEE22 /* BaseViewModel.h */,
+				3C1F871B203FC8CD00DEEE22 /* BaseViewModel.m */,
+				3C1F8721203FC8CE00DEEE22 /* Model */,
+				3C1F871E203FC8CD00DEEE22 /* MVVMViewController.h */,
+				3C1F872E203FC8CE00DEEE22 /* Utils */,
+				3C1F86F6203FC72F00DEEE22 /* NMMVVMKit.h */,
+				3C1F86F7203FC72F00DEEE22 /* Info.plist */,
+			);
+			path = NMMVVMKit;
+			sourceTree = "<group>";
+		};
+		3C1F8721203FC8CE00DEEE22 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3C1F876D203FC91B00DEEE22 /* BaseDataModel.h */,
+				3C1F8722203FC8CE00DEEE22 /* BaseDataModel.m */,
+				3C1F8728203FC8CE00DEEE22 /* BaseSectionModel.h */,
+				3C1F8723203FC8CE00DEEE22 /* BaseSectionModel.m */,
+				3C1F8726203FC8CE00DEEE22 /* BaseDataCellModel.m */,
+				3C1F872A203FC8CE00DEEE22 /* BaseDataCellModel.h */,
+				3C1F8725203FC8CE00DEEE22 /* BaseCellModel.h */,
+				3C1F872B203FC8CE00DEEE22 /* BaseCellModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3C1F872E203FC8CE00DEEE22 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3C1F872F203FC8CE00DEEE22 /* NSArray+Sequence.m */,
+				3C1F8730203FC8CE00DEEE22 /* NSString+UUID.h */,
+				3C1F8731203FC8CE00DEEE22 /* NSArray+Sequence.h */,
+				3C1F8732203FC8CE00DEEE22 /* Observable */,
+				3C1F8743203FC8CE00DEEE22 /* NSString+UUID.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		3C1F8732203FC8CE00DEEE22 /* Observable */ = {
+			isa = PBXGroup;
+			children = (
+				3C1F8733203FC8CE00DEEE22 /* DynamicObservable.h */,
+				3C1F8734203FC8CE00DEEE22 /* NSMutableArray+Move.m */,
+				3C1F8735203FC8CE00DEEE22 /* ObservationManager.m */,
+				3C1F8736203FC8CE00DEEE22 /* ValueChange.h */,
+				3C1F8737203FC8CE00DEEE22 /* Observation.h */,
+				3C1F8738203FC8CE00DEEE22 /* EventPublisher.h */,
+				3C1F8739203FC8CE00DEEE22 /* Observable.m */,
+				3C1F873A203FC8CE00DEEE22 /* NSObject+ObservationManager.m */,
+				3C1F873B203FC8CE00DEEE22 /* DynamicObservable.m */,
+				3C1F873C203FC8CE00DEEE22 /* NSMutableArray+Move.h */,
+				3C1F873D203FC8CE00DEEE22 /* ValueChange.m */,
+				3C1F873E203FC8CE00DEEE22 /* ObservationManager.h */,
+				3C1F873F203FC8CE00DEEE22 /* NSObject+ObservationManager.h */,
+				3C1F8740203FC8CE00DEEE22 /* EventPublisher.m */,
+				3C1F8741203FC8CE00DEEE22 /* Observable.h */,
+				3C1F8742203FC8CE00DEEE22 /* Observation.m */,
+			);
+			path = Observable;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3C1F86F0203FC72F00DEEE22 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C1F8748203FC8CE00DEEE22 /* BaseCollectionViewCell.h in Headers */,
+				3C1F8746203FC8CE00DEEE22 /* BaseControllerCollectionViewCell.h in Headers */,
+				3C1F86F8203FC72F00DEEE22 /* NMMVVMKit.h in Headers */,
+				3C1F8755203FC8CE00DEEE22 /* BaseDataCellModel.h in Headers */,
+				3C1F8753203FC8CE00DEEE22 /* BaseSectionModel.h in Headers */,
+				3C1F8765203FC8CE00DEEE22 /* NSMutableArray+Move.h in Headers */,
+				3C1F875F203FC8CE00DEEE22 /* ValueChange.h in Headers */,
+				3C1F8758203FC8CE00DEEE22 /* BaseCollectionViewController.h in Headers */,
+				3C1F874A203FC8CE00DEEE22 /* MVVMViewController.h in Headers */,
+				3C1F875B203FC8CE00DEEE22 /* NSArray+Sequence.h in Headers */,
+				3C1F874B203FC8CE00DEEE22 /* BaseViewModel.h in Headers */,
+				3C1F8768203FC8CE00DEEE22 /* NSObject+ObservationManager.h in Headers */,
+				3C1F876A203FC8CE00DEEE22 /* Observable.h in Headers */,
+				3C1F8750203FC8CE00DEEE22 /* BaseCellModel.h in Headers */,
+				3C1F876F203FC91C00DEEE22 /* BaseDataModel.h in Headers */,
+				3C1F8760203FC8CE00DEEE22 /* Observation.h in Headers */,
+				3C1F8761203FC8CE00DEEE22 /* EventPublisher.h in Headers */,
+				3C1F874C203FC8CE00DEEE22 /* BaseSectionController.h in Headers */,
+				3C1F8767203FC8CE00DEEE22 /* ObservationManager.h in Headers */,
+				3C1F875C203FC8CE00DEEE22 /* DynamicObservable.h in Headers */,
+				3C1F875A203FC8CE00DEEE22 /* NSString+UUID.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3C1F86F2203FC72F00DEEE22 /* NMMVVMKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C1F86FB203FC72F00DEEE22 /* Build configuration list for PBXNativeTarget "NMMVVMKit" */;
+			buildPhases = (
+				3C1F86EE203FC72F00DEEE22 /* Sources */,
+				3C1F86EF203FC72F00DEEE22 /* Frameworks */,
+				3C1F86F0203FC72F00DEEE22 /* Headers */,
+				3C1F86F1203FC72F00DEEE22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NMMVVMKit;
+			productName = NMMVVMKit;
+			productReference = 3C1F86F3203FC72F00DEEE22 /* NMMVVMKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C1F86EA203FC72F00DEEE22 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = netease;
+				TargetAttributes = {
+					3C1F86F2203FC72F00DEEE22 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3C1F86ED203FC72F00DEEE22 /* Build configuration list for PBXProject "NMMVVMKit" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3C1F86E9203FC72F00DEEE22;
+			productRefGroup = 3C1F86F4203FC72F00DEEE22 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C1F86F2203FC72F00DEEE22 /* NMMVVMKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C1F86F1203FC72F00DEEE22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C1F86EE203FC72F00DEEE22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C1F8756203FC8CE00DEEE22 /* BaseCellModel.m in Sources */,
+				3C1F8744203FC8CE00DEEE22 /* BaseControllerCollectionViewCell.m in Sources */,
+				3C1F874D203FC8CE00DEEE22 /* BaseDataModel.m in Sources */,
+				3C1F876C203FC8CE00DEEE22 /* NSString+UUID.m in Sources */,
+				3C1F8759203FC8CE00DEEE22 /* NSArray+Sequence.m in Sources */,
+				3C1F874E203FC8CE00DEEE22 /* BaseSectionModel.m in Sources */,
+				3C1F8763203FC8CE00DEEE22 /* NSObject+ObservationManager.m in Sources */,
+				3C1F8751203FC8CE00DEEE22 /* BaseDataCellModel.m in Sources */,
+				3C1F8764203FC8CE00DEEE22 /* DynamicObservable.m in Sources */,
+				3C1F8769203FC8CE00DEEE22 /* EventPublisher.m in Sources */,
+				3C1F8757203FC8CE00DEEE22 /* BaseSectionController.m in Sources */,
+				3C1F875D203FC8CE00DEEE22 /* NSMutableArray+Move.m in Sources */,
+				3C1F8747203FC8CE00DEEE22 /* BaseViewModel.m in Sources */,
+				3C1F875E203FC8CE00DEEE22 /* ObservationManager.m in Sources */,
+				3C1F8745203FC8CE00DEEE22 /* BaseCollectionViewCell.m in Sources */,
+				3C1F876B203FC8CE00DEEE22 /* Observation.m in Sources */,
+				3C1F8762203FC8CE00DEEE22 /* Observable.m in Sources */,
+				3C1F8749203FC8CE00DEEE22 /* BaseCollectionViewController.m in Sources */,
+				3C1F8766203FC8CE00DEEE22 /* ValueChange.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3C1F86F9203FC72F00DEEE22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3C1F86FA203FC72F00DEEE22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3C1F86FC203FC72F00DEEE22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = NMMVVMKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.netease.NMMVVMKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3C1F86FD203FC72F00DEEE22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = NMMVVMKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.netease.NMMVVMKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C1F86ED203FC72F00DEEE22 /* Build configuration list for PBXProject "NMMVVMKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C1F86F9203FC72F00DEEE22 /* Debug */,
+				3C1F86FA203FC72F00DEEE22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C1F86FB203FC72F00DEEE22 /* Build configuration list for PBXNativeTarget "NMMVVMKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C1F86FC203FC72F00DEEE22 /* Debug */,
+				3C1F86FD203FC72F00DEEE22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3C1F86EA203FC72F00DEEE22 /* Project object */;
+}
