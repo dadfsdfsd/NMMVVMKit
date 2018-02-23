@@ -1,5 +1,5 @@
 //
-//  BaseCollectionViewController.m
+//  NMCollectionViewController.m
 //  MyIpadDemo
 //
 //  Created by yangfan on 2018/1/5.

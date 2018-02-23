@@ -1,5 +1,5 @@
 //
-//  BaseDataModel.m
+//  NMDataModel.m
 //  MyIpadDemo
 //
 //  Created by yangfan on 2018/1/25.

@@ -1,5 +1,5 @@
 //
-//  BaseDataCellModel.h
+//  NMDataCellModel.h
 //  MyIpadDemo
 //
 //  Created by yangfan on 2018/1/5.

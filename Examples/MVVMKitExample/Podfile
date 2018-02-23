@@ -1,0 +1,8 @@
+platform :ios, '8.0'
+
+target 'MVVMKitExample' do
+pod 'IGListKit'
+pod 'MJRefresh'
+pod 'YYKit'
+pod 'ReactiveObjC'
+end
