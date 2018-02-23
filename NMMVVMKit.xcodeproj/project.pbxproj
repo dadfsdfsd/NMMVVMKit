@@ -47,9 +47,11 @@
 		3C1F876B203FC8CE00DEEE22 /* Observation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F8742203FC8CE00DEEE22 /* Observation.m */; };
 		3C1F876C203FC8CE00DEEE22 /* NSString+UUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F8743203FC8CE00DEEE22 /* NSString+UUID.m */; };
 		3C1F876F203FC91C00DEEE22 /* BaseDataModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1F876D203FC91B00DEEE22 /* BaseDataModel.h */; };
+		A1CFFC02B9F175C310FDCCAF /* libPods-NMMVVMKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C559978682552A496061EA9 /* libPods-NMMVVMKit.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1711418CD26D5A08F89F2A34 /* Pods-NMMVVMKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NMMVVMKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NMMVVMKit/Pods-NMMVVMKit.debug.xcconfig"; sourceTree = "<group>"; };
 		3C1F86F3203FC72F00DEEE22 /* NMMVVMKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NMMVVMKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C1F86F6203FC72F00DEEE22 /* NMMVVMKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMMVVMKit.h; sourceTree = "<group>"; };
 		3C1F86F7203FC72F00DEEE22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -92,6 +94,8 @@
 		3C1F8742203FC8CE00DEEE22 /* Observation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Observation.m; sourceTree = "<group>"; };
 		3C1F8743203FC8CE00DEEE22 /* NSString+UUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UUID.m"; sourceTree = "<group>"; };
 		3C1F876D203FC91B00DEEE22 /* BaseDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDataModel.h; sourceTree = "<group>"; };
+		8C559978682552A496061EA9 /* libPods-NMMVVMKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NMMVVMKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA0358F90680F322E9D7657F /* Pods-NMMVVMKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NMMVVMKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-NMMVVMKit/Pods-NMMVVMKit.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1CFFC02B9F175C310FDCCAF /* libPods-NMMVVMKit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +115,8 @@
 			children = (
 				3C1F86F5203FC72F00DEEE22 /* NMMVVMKit */,
 				3C1F86F4203FC72F00DEEE22 /* Products */,
+				838916BA06B5B63DA6952D3C /* Pods */,
+				8E7C3745AC87FCFB828FF7E3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -193,6 +200,23 @@
 			path = Observable;
 			sourceTree = "<group>";
 		};
+		838916BA06B5B63DA6952D3C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1711418CD26D5A08F89F2A34 /* Pods-NMMVVMKit.debug.xcconfig */,
+				EA0358F90680F322E9D7657F /* Pods-NMMVVMKit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8E7C3745AC87FCFB828FF7E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C559978682552A496061EA9 /* libPods-NMMVVMKit.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -231,10 +255,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3C1F86FB203FC72F00DEEE22 /* Build configuration list for PBXNativeTarget "NMMVVMKit" */;
 			buildPhases = (
+				8A8DA770BEF744EA97AE81A5 /* [CP] Check Pods Manifest.lock */,
 				3C1F86EE203FC72F00DEEE22 /* Sources */,
 				3C1F86EF203FC72F00DEEE22 /* Frameworks */,
 				3C1F86F0203FC72F00DEEE22 /* Headers */,
 				3C1F86F1203FC72F00DEEE22 /* Resources */,
+				AEC3A371F0163B64D0658808 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -286,6 +312,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8A8DA770BEF744EA97AE81A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NMMVVMKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AEC3A371F0163B64D0658808 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NMMVVMKit/Pods-NMMVVMKit-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NMMVVMKit/Pods-NMMVVMKit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3C1F86EE203FC72F00DEEE22 /* Sources */ = {
@@ -429,6 +494,7 @@
 		};
 		3C1F86FC203FC72F00DEEE22 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1711418CD26D5A08F89F2A34 /* Pods-NMMVVMKit.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -449,6 +515,7 @@
 		};
 		3C1F86FD203FC72F00DEEE22 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA0358F90680F322E9D7657F /* Pods-NMMVVMKit.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;

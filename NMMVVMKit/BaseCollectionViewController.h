@@ -10,7 +10,6 @@
 #import <IGListKit/IGListKit.h>
 #import "BaseViewModel.h"
 #import "MVVMViewController.h"
-#import <KVOController/KVOController.h>
 
 
 @interface BaseCollectionViewController<__covariant ViewModelType: BaseViewModel *> : UIViewController<MVVMViewController>
