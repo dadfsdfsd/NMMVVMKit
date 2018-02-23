@@ -6,9 +6,9 @@
 //  Copyright © 2018年 yangfan. All rights reserved.
 //
 
-#import "BaseDataCellModel.h"
+#import "NMDataCellModel.h"
 
-@implementation BaseDataCellModel
+@implementation NMDataCellModel
 
 - (instancetype)initWithData:(id)data {
     if (self = [super init]) {
@@ -33,8 +33,8 @@
 }
 
 - (BOOL)isEqualToDiffableObject:(id<IGListDiffable>)object {
-    BaseDataCellModel *cellModel = (BaseDataCellModel *)object;
-    if ([cellModel isKindOfClass:[BaseDataCellModel class]]) {
+    NMDataCellModel *cellModel = (NMDataCellModel *)object;
+    if ([cellModel isKindOfClass:[NMDataCellModel class]]) {
         return [self.data isEqualToDiffableObject:cellModel.data];
     }
     return false;

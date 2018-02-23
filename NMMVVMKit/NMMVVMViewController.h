@@ -1,5 +1,5 @@
 //
-//  MVVMViewController.h
+//  NMMVVMViewController.h
 //  MyIpadDemo
 //
 //  Created by 杨帆 on 2018/2/22.
@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BaseViewModel.h"
+#import "NMViewModel.h"
 
-@protocol MVVMViewController<NSObject>
+@protocol NMMVVMViewController<NSObject>
 
-- (void)bindViewModel:(BaseViewModel *)viewModel;
+- (void)bindViewModel:(NMViewModel *)viewModel;
 
 @end

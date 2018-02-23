@@ -1,21 +1,21 @@
 //
-//  BaseViewModel.m
+//  NMViewModel.m
 //  MyIpadDemo
 //
 //  Created by yangfan on 2018/1/5.
 //  Copyright © 2018年 yangfan. All rights reserved.
 //
 
-#import "BaseViewModel.h"
+#import "NMViewModel.h"
 
-@interface BaseViewModel ()
+@interface NMViewModel ()
     
-@property(nonatomic, strong) NSArray<BaseSectionModel *> *sectionModels;
+@property(nonatomic, strong) NSArray<NMSectionModel *> *sectionModels;
 
 @end
 
 
-@implementation BaseViewModel {
+@implementation NMViewModel {
     
     BOOL _isDataInitialized;
     
@@ -27,7 +27,7 @@
     }
     else {
         __weak __typeof(self) weakSelf = self;
-        [self performUpdatesAnimated:false completion:^(BOOL finished, NSArray<BaseSectionModel *> *sectionModels) {
+        [self performUpdatesAnimated:false completion:^(BOOL finished, NSArray<NMSectionModel *> *sectionModels) {
             if (finished) {
                 weakSelf.sectionModels = sectionModels;
             }
@@ -68,30 +68,30 @@
 
 - (void)reload:(BOOL)aniamted {
     __weak __typeof(self) weakSelf = self;
-    [self performUpdatesAnimated:aniamted completion:^(BOOL finished, NSArray<BaseSectionModel *> *sectionModels) {
+    [self performUpdatesAnimated:aniamted completion:^(BOOL finished, NSArray<NMSectionModel *> *sectionModels) {
         if (finished) {
             weakSelf.sectionModels = sectionModels;
         }
     }];
 }
 
-- (NSArray<BaseSectionModel *> *)newSectionModels {
-    return [NSArray<BaseSectionModel *> new];
+- (NSArray<NMSectionModel *> *)newSectionModels {
+    return [NSArray<NMSectionModel *> new];
 }
 
-- (void)performUpdatesAnimated:(BOOL)animated completion:(BaseViewModelUpdaterCompletion)completion {
+- (void)performUpdatesAnimated:(BOOL)animated completion:(NMViewModelUpdaterCompletion)completion {
     [_delegate reload:animated completion:completion];
 }
 
-- (BaseSectionModel *)sectionModelAtIndex:(NSInteger)index {
+- (NMSectionModel *)sectionModelAtIndex:(NSInteger)index {
     if (index < _sectionModels.count) {
         return _sectionModels[index];
     }
     return nil;
 }
 
-- (id<BaseCellModel>)cellModelAtIndexPath:(NSIndexPath *)indexPath {
-    BaseSectionModel *sectionModel = [self sectionModelAtIndex:indexPath.section];
+- (id<NMCellModel>)cellModelAtIndexPath:(NSIndexPath *)indexPath {
+    NMSectionModel *sectionModel = [self sectionModelAtIndex:indexPath.section];
     if (sectionModel && indexPath.row < sectionModel.cellModels.count) {
         return sectionModel.cellModels[indexPath.row];
     }

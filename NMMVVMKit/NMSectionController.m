@@ -6,8 +6,8 @@
 //  Copyright © 2018年 yangfan. All rights reserved.
 //
 
-#import "BaseSectionController.h"
-#import "BaseCollectionViewCell.h"
+#import "NMSectionController.h"
+#import "NMCollectionViewCell.h"
 
 typedef NS_ENUM(NSInteger, IGListDiffingSectionState) {
     IGListDiffingSectionStateIdle = 0,
@@ -16,7 +16,7 @@ typedef NS_ENUM(NSInteger, IGListDiffingSectionState) {
 };
 
 
-@interface IGListBindingSectionController()<IGListSupplementaryViewSource, IGListWorkingRangeDelegate, BaseSectionModelDelegate>
+@interface IGListBindingSectionController()<IGListSupplementaryViewSource, IGListWorkingRangeDelegate, NMSectionModelDelegate>
 
 @property (nonatomic, strong, readwrite) NSArray<id<IGListDiffable>> *viewModels;
 
@@ -26,7 +26,7 @@ typedef NS_ENUM(NSInteger, IGListDiffingSectionState) {
 
 @end
 
-@implementation BaseSectionController
+@implementation NMSectionController
 
 - (void)updateAnimated:(BOOL)animated onlySize:(BOOL)onlySize {
     if (onlySize) {
@@ -125,24 +125,24 @@ typedef NS_ENUM(NSInteger, IGListDiffingSectionState) {
 }
 
 - (nonnull UICollectionViewCell<IGListBindable> *)sectionController:(nonnull IGListBindingSectionController *)sectionController cellForViewModel:(nonnull id)viewModel atIndex:(NSInteger)index {
-    id<BaseCellModel> cellModel = (id<BaseCellModel>)viewModel;
-    BaseCollectionViewCell *collectionViewCell = [self.collectionContext dequeueReusableCellOfClass:_cellModel2Cell[[cellModel.class cellIdentifier]] forSectionController:self atIndex:index];
+    id<NMCellModel> cellModel = (id<NMCellModel>)viewModel;
+    NMCollectionViewCell *collectionViewCell = [self.collectionContext dequeueReusableCellOfClass:_cellModel2Cell[[cellModel.class cellIdentifier]] forSectionController:self atIndex:index];
     collectionViewCell.delegate = self;
     return (UICollectionViewCell<IGListBindable> *)collectionViewCell;
 }
 
 - (CGSize)sectionController:(nonnull IGListBindingSectionController *)sectionController sizeForViewModel:(nonnull id)viewModel atIndex:(NSInteger)index {
-    if ([self.object isKindOfClass:[BaseSectionModel class]]) {
-        BaseSectionModel *sectionModel = (BaseSectionModel *)self.object;
-        id<BaseCellModel> cellModel = (id<BaseCellModel>)viewModel;
+    if ([self.object isKindOfClass:[NMSectionModel class]]) {
+        NMSectionModel *sectionModel = (NMSectionModel *)self.object;
+        id<NMCellModel> cellModel = (id<NMCellModel>)viewModel;
         return [cellModel expectedSizeForContainerWidth:self.collectionContext.containerSize.width - sectionModel.inset.left - sectionModel.inset.right];
     }
     return CGSizeZero;
 }
 
 - (nonnull NSArray<id<IGListDiffable>> *)sectionController:(nonnull IGListBindingSectionController *)sectionController viewModelsForObject:(nonnull id)object {
-    if ([object isKindOfClass:[BaseSectionModel class]]) {
-        BaseSectionModel *sectionModel = (BaseSectionModel *)object;
+    if ([object isKindOfClass:[NMSectionModel class]]) {
+        NMSectionModel *sectionModel = (NMSectionModel *)object;
         return sectionModel.cellModels;
     }
     return [NSArray<id<IGListDiffable>> new];
@@ -166,8 +166,8 @@ typedef NS_ENUM(NSInteger, IGListDiffingSectionState) {
             [self updateAnimated:YES completion:nil];
         }
     }
-    if ([object isKindOfClass:[BaseSectionModel class]]) {
-        BaseSectionModel *sectionModel = (BaseSectionModel *)object;
+    if ([object isKindOfClass:[NMSectionModel class]]) {
+        NMSectionModel *sectionModel = (NMSectionModel *)object;
         sectionModel.delegate = self;
         self.inset = sectionModel.inset;
         self.minimumInteritemSpacing = sectionModel.minimumInteritemSpacing;
@@ -176,8 +176,8 @@ typedef NS_ENUM(NSInteger, IGListDiffingSectionState) {
 }
 
 - (CGSize)sizeForSupplementaryViewOfKind:(NSString *)elementKind atIndex:(NSInteger)index {
-    if ([self.object isKindOfClass:[BaseSectionModel class]]) {
-        BaseSectionModel *sectionModel = (BaseSectionModel *)self.object;
+    if ([self.object isKindOfClass:[NMSectionModel class]]) {
+        NMSectionModel *sectionModel = (NMSectionModel *)self.object;
         if (elementKind == UICollectionElementKindSectionHeader && sectionModel.headerCell != nil) {
             return [sectionModel.headerCell expectedSizeForContainerWidth:self.collectionContext.containerSize.width - sectionModel.inset.left - sectionModel.inset.right];
         }
@@ -189,15 +189,15 @@ typedef NS_ENUM(NSInteger, IGListDiffingSectionState) {
 }
 
 - (UICollectionReusableView *)viewForSupplementaryElementOfKind:(NSString *)elementKind atIndex:(NSInteger)index {
-    if ([self.object isKindOfClass:[BaseSectionModel class]]) {
-        BaseSectionModel *sectionModel = (BaseSectionModel *)self.object;
+    if ([self.object isKindOfClass:[NMSectionModel class]]) {
+        NMSectionModel *sectionModel = (NMSectionModel *)self.object;
         if (elementKind == UICollectionElementKindSectionHeader && sectionModel.headerCell != nil) {
-            BaseCollectionViewCell *cell = [self.collectionContext dequeueReusableSupplementaryViewOfKind:elementKind forSectionController:self class:_cellModel2Cell[[sectionModel.headerCell.class cellIdentifier]] atIndex:index];
+            NMCollectionViewCell *cell = [self.collectionContext dequeueReusableSupplementaryViewOfKind:elementKind forSectionController:self class:_cellModel2Cell[[sectionModel.headerCell.class cellIdentifier]] atIndex:index];
             [cell bindCellModel:sectionModel.headerCell];
             return cell;
         }
         else if (elementKind == UICollectionElementKindSectionFooter && sectionModel.footerCell != nil) {
-            BaseCollectionViewCell *cell = [self.collectionContext dequeueReusableSupplementaryViewOfKind:elementKind forSectionController:self class:_cellModel2Cell[[sectionModel.footerCell.class cellIdentifier]] atIndex:index];
+            NMCollectionViewCell *cell = [self.collectionContext dequeueReusableSupplementaryViewOfKind:elementKind forSectionController:self class:_cellModel2Cell[[sectionModel.footerCell.class cellIdentifier]] atIndex:index];
             [cell bindCellModel:sectionModel.footerCell];
             return cell;
         }
@@ -206,9 +206,9 @@ typedef NS_ENUM(NSInteger, IGListDiffingSectionState) {
 }
 
 - (NSArray<NSString *> *)supportedElementKinds {
-    if ([self.object isKindOfClass:[BaseSectionModel class]]) {
+    if ([self.object isKindOfClass:[NMSectionModel class]]) {
         NSMutableArray<NSString *> *supportedElementKinds = [NSMutableArray<NSString *> new];
-        BaseSectionModel *sectionModel = (BaseSectionModel *)self.object;
+        NMSectionModel *sectionModel = (NMSectionModel *)self.object;
         if (sectionModel.headerCell != nil) {
             [supportedElementKinds addObject:UICollectionElementKindSectionHeader];
         }
@@ -221,15 +221,15 @@ typedef NS_ENUM(NSInteger, IGListDiffingSectionState) {
 }
 
 - (void)listAdapter:(IGListAdapter *)listAdapter sectionControllerDidExitWorkingRange:(IGListSectionController *)sectionController {
-    if ([self.object isKindOfClass:[BaseSectionModel class]]) {
-        BaseSectionModel *sectionModel = (BaseSectionModel *)self.object;
+    if ([self.object isKindOfClass:[NMSectionModel class]]) {
+        NMSectionModel *sectionModel = (NMSectionModel *)self.object;
         [sectionModel willEnterWorkingRange];
     }
 }
 
 -(void)listAdapter:(IGListAdapter *)listAdapter sectionControllerWillEnterWorkingRange:(IGListSectionController *)sectionController {
-    if ([self.object isKindOfClass:[BaseSectionModel class]]) {
-        BaseSectionModel *sectionModel = (BaseSectionModel *)self.object;
+    if ([self.object isKindOfClass:[NMSectionModel class]]) {
+        NMSectionModel *sectionModel = (NMSectionModel *)self.object;
         [sectionModel didExitWorkingRange];
     }
 }

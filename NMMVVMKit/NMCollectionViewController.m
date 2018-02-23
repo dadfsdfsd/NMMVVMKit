@@ -6,13 +6,13 @@
 //  Copyright © 2018年 yangfan. All rights reserved.
 //
 
-#import "BaseCollectionViewController.h"
-#import "BaseViewModel.h"
-#import "BaseSectionController.h"
+#import "NMCollectionViewController.h"
+#import "NMViewModel.h"
+#import "NMSectionController.h"
 #import <MJRefresh/MJRefresh.h>
 
 
-@interface BaseCollectionViewController()<IGListAdapterDataSource, IGListAdapterDelegate, UICollectionViewDelegate, BaseViewModelDelegate, IGListBindingSectionControllerSelectionDelegate>
+@interface NMCollectionViewController()<IGListAdapterDataSource, IGListAdapterDelegate, UICollectionViewDelegate, NMViewModelDelegate, IGListBindingSectionControllerSelectionDelegate>
 
 @property (nonatomic, strong) IGListAdapter *listAdapter;
 
@@ -20,15 +20,15 @@
 
 @property (nonatomic, assign) BOOL needsRefresh;
 
-@property (nonatomic, strong) NSArray<BaseSectionModel *> *tmpDatas;
+@property (nonatomic, strong) NSArray<NMSectionModel *> *tmpDatas;
 
-@property (nonatomic, strong) BaseViewModel *viewModelToBind;
+@property (nonatomic, strong) NMViewModel *viewModelToBind;
 
 @end
 
-@implementation BaseCollectionViewController {
+@implementation NMCollectionViewController {
     
-    BaseViewModel *_viewModel;
+    NMViewModel *_viewModel;
     
 }
 
@@ -54,7 +54,7 @@
     return listAdapter;
 }
 
-- (BaseViewModel *)loadViewModel {
+- (NMViewModel *)loadViewModel {
     return nil;
 }
 
@@ -118,7 +118,7 @@
     return nil;
 }
 
-- (void)setViewModel:(BaseViewModel *)viewModel {
+- (void)setViewModel:(NMViewModel *)viewModel {
     if (self.isViewLoaded) {
         [self bindViewModel:viewModel];
     }
@@ -127,14 +127,14 @@
     }
 }
 
-- (BaseViewModel *)viewModel {
+- (NMViewModel *)viewModel {
     if (_viewModelToBind) {
         return _viewModelToBind;
     }
     return _viewModel;
 }
 
-- (void)bindViewModel:(BaseViewModel *)viewModel {
+- (void)bindViewModel:(NMViewModel *)viewModel {
     [self view];
     if (_viewModel == viewModel) {
         return;
@@ -188,7 +188,7 @@
 }
 
 - (nonnull IGListSectionController *)listAdapter:(nonnull IGListAdapter *)listAdapter sectionControllerForObject:(nonnull id)object {
-    return [[BaseSectionController alloc] initWithCellModelToCell:[self cellModel2Cell] selectionDelegate:self];
+    return [[NMSectionController alloc] initWithCellModelToCell:[self cellModel2Cell] selectionDelegate:self];
 }
 
 - (nonnull NSArray<id<IGListDiffable>> *)objectsForListAdapter:(nonnull IGListAdapter *)listAdapter {
@@ -236,20 +236,20 @@
     }
 }
 
-- (void)reload:(BOOL)animated completion:(BaseViewModelUpdaterCompletion)completion {
+- (void)reload:(BOOL)animated completion:(NMViewModelUpdaterCompletion)completion {
     [self checkLoadMoreEnabled];
     [self checkRefreshHeaderEnabled];
     
     [_listAdapter performUpdatesAnimated:animated completion:^(BOOL finished) {
         if (finished) {
-            NSArray<BaseSectionModel *> *sectionModels = [_tmpDatas copy];
+            NSArray<NMSectionModel *> *sectionModels = [_tmpDatas copy];
             [[_listAdapter objects] enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-                BaseSectionController *sectionController =  (BaseSectionController *)[_listAdapter sectionControllerForObject:obj];
-                if ([sectionController isKindOfClass:[BaseSectionController class]] && idx < sectionModels.count) {
+                NMSectionController *sectionController =  (NMSectionController *)[_listAdapter sectionControllerForObject:obj];
+                if ([sectionController isKindOfClass:[NMSectionController class]] && idx < sectionModels.count) {
                     sectionModels[idx].cellModels = [sectionController.viewModels copy];
                 }
                 else {
-                    NSLog(@"Error: SectionController must be kind of BaseSectionController or unknown error");
+                    NSLog(@"Error: SectionController must be kind of NMSectionController or unknown error");
                 }
             }];
             completion(true, sectionModels);

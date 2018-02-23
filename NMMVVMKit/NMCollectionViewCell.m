@@ -6,13 +6,13 @@
 //  Copyright © 2018年 yangfan. All rights reserved.
 //
 
-#import "BaseCollectionViewCell.h"
+#import "NMCollectionViewCell.h"
 
-@interface BaseCollectionViewCell ()<IGListBindable>
+@interface NMCollectionViewCell ()<IGListBindable>
 
 @end
 
-@implementation BaseCollectionViewCell
+@implementation NMCollectionViewCell
 
 - (void)bindCellModel:(id)cellModel {
     

@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MVVMViewController.h"
-#import "BaseCollectionViewCell.h"
+#import "NMMVVMViewController.h"
+#import "NMCollectionViewCell.h"
 
-@interface BaseControllerCollectionViewCell : BaseCollectionViewCell
+@interface NMControllerCollectionViewCell : NMCollectionViewCell
 
 //need override
 - (Class)viewControllerClass;

@@ -6,16 +6,16 @@
 //  Copyright © 2018年 yangfan. All rights reserved.
 //
 
-#import "BaseControllerCollectionViewCell.h"
+#import "NMControllerCollectionViewCell.h"
 
-@implementation BaseControllerCollectionViewCell {
+@implementation NMControllerCollectionViewCell {
     
-    UIViewController<MVVMViewController> *viewControler;
+    UIViewController<NMMVVMViewController> *viewControler;
 
 }
 
 - (Class)viewControllerClass {
-    return [BaseCollectionViewCell class];
+    return [NMCollectionViewCell class];
 }
 
 - (void)bindCellModel:(id)cellModel {

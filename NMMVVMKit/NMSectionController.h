@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import <IGListKit/IGListKit.h>
-#import "BaseSectionModel.h"
+#import "NMSectionModel.h"
 
-@interface BaseSectionController : IGListBindingSectionController<id<BaseCellModel>><IGListBindingSectionControllerDataSource>
+@interface NMSectionController : IGListBindingSectionController<id<NMCellModel>><IGListBindingSectionControllerDataSource>
 
 - (instancetype)initWithCellModelToCell:(NSDictionary<NSString *, Class> *)dictionary selectionDelegate:(id<IGListBindingSectionControllerSelectionDelegate>)delegate;
 

@@ -1,5 +1,5 @@
 //
-//  BaseViewModel.h
+//  NMViewModel.h
 //  MyIpadDemo
 //
 //  Created by yangfan on 2018/1/5.
@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "BaseSectionModel.h"
+#import "NMSectionModel.h"
 
 typedef NS_ENUM (NSInteger, ViewModelState) {
     ViewModelStateIdle,
@@ -17,13 +17,13 @@ typedef NS_ENUM (NSInteger, ViewModelState) {
     ViewModelStateUpdating
 };
 
-typedef void (^BaseViewModelUpdaterCompletion)(BOOL finished, NSArray<BaseSectionModel *> *sectionModels);
+typedef void (^NMViewModelUpdaterCompletion)(BOOL finished, NSArray<NMSectionModel *> *sectionModels);
 
-@protocol BaseViewModelDelegate
+@protocol NMViewModelDelegate
 
 @required
 
-- (void)reload:(BOOL)animated completion:(BaseViewModelUpdaterCompletion)completion;
+- (void)reload:(BOOL)animated completion:(NMViewModelUpdaterCompletion)completion;
 
 - (void)setNeedsUpdate;
 
@@ -31,11 +31,11 @@ typedef void (^BaseViewModelUpdaterCompletion)(BOOL finished, NSArray<BaseSectio
 
 @end
 
-@interface BaseViewModel : NSObject
+@interface NMViewModel : NSObject
 
-@property(nonatomic, strong, readonly) NSArray<BaseSectionModel *> *sectionModels;
+@property(nonatomic, strong, readonly) NSArray<NMSectionModel *> *sectionModels;
 
-@property(nonatomic, weak) id<BaseViewModelDelegate> delegate;
+@property(nonatomic, weak) id<NMViewModelDelegate> delegate;
 
 @property (nonatomic, assign) ViewModelState state;
 
@@ -51,13 +51,13 @@ typedef void (^BaseViewModelUpdaterCompletion)(BOOL finished, NSArray<BaseSectio
 
 - (void)reload:(BOOL)animated;
 
-- (BaseSectionModel *)sectionModelAtIndex:(NSInteger)index;
+- (NMSectionModel *)sectionModelAtIndex:(NSInteger)index;
 
-- (id<BaseCellModel>)cellModelAtIndexPath:(NSIndexPath *)indexPath;
+- (id<NMCellModel>)cellModelAtIndexPath:(NSIndexPath *)indexPath;
 
 
 //need override
-- (NSArray<BaseSectionModel *> *) newSectionModels;
+- (NSArray<NMSectionModel *> *) newSectionModels;
 
 - (void)loadData;
 

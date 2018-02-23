@@ -8,24 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		3C1F86F8203FC72F00DEEE22 /* NMMVVMKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1F86F6203FC72F00DEEE22 /* NMMVVMKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3C1F8744203FC8CE00DEEE22 /* BaseControllerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F8718203FC8CD00DEEE22 /* BaseControllerCollectionViewCell.m */; };
-		3C1F8745203FC8CE00DEEE22 /* BaseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F8719203FC8CD00DEEE22 /* BaseCollectionViewCell.m */; };
-		3C1F8746203FC8CE00DEEE22 /* BaseControllerCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1F871A203FC8CD00DEEE22 /* BaseControllerCollectionViewCell.h */; };
-		3C1F8747203FC8CE00DEEE22 /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F871B203FC8CD00DEEE22 /* BaseViewModel.m */; };
-		3C1F8748203FC8CE00DEEE22 /* BaseCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1F871C203FC8CD00DEEE22 /* BaseCollectionViewCell.h */; };
-		3C1F8749203FC8CE00DEEE22 /* BaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F871D203FC8CD00DEEE22 /* BaseCollectionViewController.m */; };
-		3C1F874A203FC8CE00DEEE22 /* MVVMViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1F871E203FC8CD00DEEE22 /* MVVMViewController.h */; };
-		3C1F874B203FC8CE00DEEE22 /* BaseViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1F871F203FC8CE00DEEE22 /* BaseViewModel.h */; };
-		3C1F874C203FC8CE00DEEE22 /* BaseSectionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1F8720203FC8CE00DEEE22 /* BaseSectionController.h */; };
-		3C1F874D203FC8CE00DEEE22 /* BaseDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F8722203FC8CE00DEEE22 /* BaseDataModel.m */; };
-		3C1F874E203FC8CE00DEEE22 /* BaseSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F8723203FC8CE00DEEE22 /* BaseSectionModel.m */; };
-		3C1F8750203FC8CE00DEEE22 /* BaseCellModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1F8725203FC8CE00DEEE22 /* BaseCellModel.h */; };
-		3C1F8751203FC8CE00DEEE22 /* BaseDataCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F8726203FC8CE00DEEE22 /* BaseDataCellModel.m */; };
-		3C1F8753203FC8CE00DEEE22 /* BaseSectionModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1F8728203FC8CE00DEEE22 /* BaseSectionModel.h */; };
-		3C1F8755203FC8CE00DEEE22 /* BaseDataCellModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1F872A203FC8CE00DEEE22 /* BaseDataCellModel.h */; };
-		3C1F8756203FC8CE00DEEE22 /* BaseCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F872B203FC8CE00DEEE22 /* BaseCellModel.m */; };
-		3C1F8757203FC8CE00DEEE22 /* BaseSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F872C203FC8CE00DEEE22 /* BaseSectionController.m */; };
-		3C1F8758203FC8CE00DEEE22 /* BaseCollectionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1F872D203FC8CE00DEEE22 /* BaseCollectionViewController.h */; };
+		3C1F8744203FC8CE00DEEE22 /* NMControllerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F8718203FC8CD00DEEE22 /* NMControllerCollectionViewCell.m */; };
+		3C1F8745203FC8CE00DEEE22 /* NMCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F8719203FC8CD00DEEE22 /* NMCollectionViewCell.m */; };
+		3C1F8746203FC8CE00DEEE22 /* NMControllerCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1F871A203FC8CD00DEEE22 /* NMControllerCollectionViewCell.h */; };
+		3C1F8747203FC8CE00DEEE22 /* NMViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F871B203FC8CD00DEEE22 /* NMViewModel.m */; };
+		3C1F8748203FC8CE00DEEE22 /* NMCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1F871C203FC8CD00DEEE22 /* NMCollectionViewCell.h */; };
+		3C1F8749203FC8CE00DEEE22 /* NMCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F871D203FC8CD00DEEE22 /* NMCollectionViewController.m */; };
+		3C1F874A203FC8CE00DEEE22 /* NMMVVMViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1F871E203FC8CD00DEEE22 /* NMMVVMViewController.h */; };
+		3C1F874B203FC8CE00DEEE22 /* NMViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1F871F203FC8CE00DEEE22 /* NMViewModel.h */; };
+		3C1F874C203FC8CE00DEEE22 /* NMSectionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1F8720203FC8CE00DEEE22 /* NMSectionController.h */; };
+		3C1F874D203FC8CE00DEEE22 /* NMDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F8722203FC8CE00DEEE22 /* NMDataModel.m */; };
+		3C1F874E203FC8CE00DEEE22 /* NMSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F8723203FC8CE00DEEE22 /* NMSectionModel.m */; };
+		3C1F8750203FC8CE00DEEE22 /* NMCellModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1F8725203FC8CE00DEEE22 /* NMCellModel.h */; };
+		3C1F8751203FC8CE00DEEE22 /* NMDataCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F8726203FC8CE00DEEE22 /* NMDataCellModel.m */; };
+		3C1F8753203FC8CE00DEEE22 /* NMSectionModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1F8728203FC8CE00DEEE22 /* NMSectionModel.h */; };
+		3C1F8755203FC8CE00DEEE22 /* NMDataCellModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1F872A203FC8CE00DEEE22 /* NMDataCellModel.h */; };
+		3C1F8756203FC8CE00DEEE22 /* NMCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F872B203FC8CE00DEEE22 /* NMCellModel.m */; };
+		3C1F8757203FC8CE00DEEE22 /* NMSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F872C203FC8CE00DEEE22 /* NMSectionController.m */; };
+		3C1F8758203FC8CE00DEEE22 /* NMCollectionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1F872D203FC8CE00DEEE22 /* NMCollectionViewController.h */; };
 		3C1F8759203FC8CE00DEEE22 /* NSArray+Sequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F872F203FC8CE00DEEE22 /* NSArray+Sequence.m */; };
 		3C1F875A203FC8CE00DEEE22 /* NSString+UUID.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1F8730203FC8CE00DEEE22 /* NSString+UUID.h */; };
 		3C1F875B203FC8CE00DEEE22 /* NSArray+Sequence.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1F8731203FC8CE00DEEE22 /* NSArray+Sequence.h */; };
@@ -46,7 +46,7 @@
 		3C1F876A203FC8CE00DEEE22 /* Observable.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1F8741203FC8CE00DEEE22 /* Observable.h */; };
 		3C1F876B203FC8CE00DEEE22 /* Observation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F8742203FC8CE00DEEE22 /* Observation.m */; };
 		3C1F876C203FC8CE00DEEE22 /* NSString+UUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F8743203FC8CE00DEEE22 /* NSString+UUID.m */; };
-		3C1F876F203FC91C00DEEE22 /* BaseDataModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1F876D203FC91B00DEEE22 /* BaseDataModel.h */; };
+		3C1F876F203FC91C00DEEE22 /* NMDataModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1F876D203FC91B00DEEE22 /* NMDataModel.h */; };
 		A1CFFC02B9F175C310FDCCAF /* libPods-NMMVVMKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C559978682552A496061EA9 /* libPods-NMMVVMKit.a */; };
 /* End PBXBuildFile section */
 
@@ -55,24 +55,24 @@
 		3C1F86F3203FC72F00DEEE22 /* NMMVVMKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NMMVVMKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C1F86F6203FC72F00DEEE22 /* NMMVVMKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMMVVMKit.h; sourceTree = "<group>"; };
 		3C1F86F7203FC72F00DEEE22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3C1F8718203FC8CD00DEEE22 /* BaseControllerCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseControllerCollectionViewCell.m; sourceTree = "<group>"; };
-		3C1F8719203FC8CD00DEEE22 /* BaseCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionViewCell.m; sourceTree = "<group>"; };
-		3C1F871A203FC8CD00DEEE22 /* BaseControllerCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseControllerCollectionViewCell.h; sourceTree = "<group>"; };
-		3C1F871B203FC8CD00DEEE22 /* BaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewModel.m; sourceTree = "<group>"; };
-		3C1F871C203FC8CD00DEEE22 /* BaseCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCollectionViewCell.h; sourceTree = "<group>"; };
-		3C1F871D203FC8CD00DEEE22 /* BaseCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionViewController.m; sourceTree = "<group>"; };
-		3C1F871E203FC8CD00DEEE22 /* MVVMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVVMViewController.h; sourceTree = "<group>"; };
-		3C1F871F203FC8CE00DEEE22 /* BaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewModel.h; sourceTree = "<group>"; };
-		3C1F8720203FC8CE00DEEE22 /* BaseSectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSectionController.h; sourceTree = "<group>"; };
-		3C1F8722203FC8CE00DEEE22 /* BaseDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDataModel.m; sourceTree = "<group>"; };
-		3C1F8723203FC8CE00DEEE22 /* BaseSectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSectionModel.m; sourceTree = "<group>"; };
-		3C1F8725203FC8CE00DEEE22 /* BaseCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCellModel.h; sourceTree = "<group>"; };
-		3C1F8726203FC8CE00DEEE22 /* BaseDataCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDataCellModel.m; sourceTree = "<group>"; };
-		3C1F8728203FC8CE00DEEE22 /* BaseSectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSectionModel.h; sourceTree = "<group>"; };
-		3C1F872A203FC8CE00DEEE22 /* BaseDataCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDataCellModel.h; sourceTree = "<group>"; };
-		3C1F872B203FC8CE00DEEE22 /* BaseCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCellModel.m; sourceTree = "<group>"; };
-		3C1F872C203FC8CE00DEEE22 /* BaseSectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSectionController.m; sourceTree = "<group>"; };
-		3C1F872D203FC8CE00DEEE22 /* BaseCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCollectionViewController.h; sourceTree = "<group>"; };
+		3C1F8718203FC8CD00DEEE22 /* NMControllerCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMControllerCollectionViewCell.m; sourceTree = "<group>"; };
+		3C1F8719203FC8CD00DEEE22 /* NMCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMCollectionViewCell.m; sourceTree = "<group>"; };
+		3C1F871A203FC8CD00DEEE22 /* NMControllerCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMControllerCollectionViewCell.h; sourceTree = "<group>"; };
+		3C1F871B203FC8CD00DEEE22 /* NMViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMViewModel.m; sourceTree = "<group>"; };
+		3C1F871C203FC8CD00DEEE22 /* NMCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMCollectionViewCell.h; sourceTree = "<group>"; };
+		3C1F871D203FC8CD00DEEE22 /* NMCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMCollectionViewController.m; sourceTree = "<group>"; };
+		3C1F871E203FC8CD00DEEE22 /* NMMVVMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMMVVMViewController.h; sourceTree = "<group>"; };
+		3C1F871F203FC8CE00DEEE22 /* NMViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMViewModel.h; sourceTree = "<group>"; };
+		3C1F8720203FC8CE00DEEE22 /* NMSectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMSectionController.h; sourceTree = "<group>"; };
+		3C1F8722203FC8CE00DEEE22 /* NMDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMDataModel.m; sourceTree = "<group>"; };
+		3C1F8723203FC8CE00DEEE22 /* NMSectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMSectionModel.m; sourceTree = "<group>"; };
+		3C1F8725203FC8CE00DEEE22 /* NMCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMCellModel.h; sourceTree = "<group>"; };
+		3C1F8726203FC8CE00DEEE22 /* NMDataCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMDataCellModel.m; sourceTree = "<group>"; };
+		3C1F8728203FC8CE00DEEE22 /* NMSectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMSectionModel.h; sourceTree = "<group>"; };
+		3C1F872A203FC8CE00DEEE22 /* NMDataCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMDataCellModel.h; sourceTree = "<group>"; };
+		3C1F872B203FC8CE00DEEE22 /* NMCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMCellModel.m; sourceTree = "<group>"; };
+		3C1F872C203FC8CE00DEEE22 /* NMSectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMSectionController.m; sourceTree = "<group>"; };
+		3C1F872D203FC8CE00DEEE22 /* NMCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMCollectionViewController.h; sourceTree = "<group>"; };
 		3C1F872F203FC8CE00DEEE22 /* NSArray+Sequence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Sequence.m"; sourceTree = "<group>"; };
 		3C1F8730203FC8CE00DEEE22 /* NSString+UUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+UUID.h"; sourceTree = "<group>"; };
 		3C1F8731203FC8CE00DEEE22 /* NSArray+Sequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Sequence.h"; sourceTree = "<group>"; };
@@ -93,7 +93,7 @@
 		3C1F8741203FC8CE00DEEE22 /* Observable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Observable.h; sourceTree = "<group>"; };
 		3C1F8742203FC8CE00DEEE22 /* Observation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Observation.m; sourceTree = "<group>"; };
 		3C1F8743203FC8CE00DEEE22 /* NSString+UUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UUID.m"; sourceTree = "<group>"; };
-		3C1F876D203FC91B00DEEE22 /* BaseDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDataModel.h; sourceTree = "<group>"; };
+		3C1F876D203FC91B00DEEE22 /* NMDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMDataModel.h; sourceTree = "<group>"; };
 		8C559978682552A496061EA9 /* libPods-NMMVVMKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NMMVVMKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA0358F90680F322E9D7657F /* Pods-NMMVVMKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NMMVVMKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-NMMVVMKit/Pods-NMMVVMKit.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -131,18 +131,18 @@
 		3C1F86F5203FC72F00DEEE22 /* NMMVVMKit */ = {
 			isa = PBXGroup;
 			children = (
-				3C1F871C203FC8CD00DEEE22 /* BaseCollectionViewCell.h */,
-				3C1F8719203FC8CD00DEEE22 /* BaseCollectionViewCell.m */,
-				3C1F872D203FC8CE00DEEE22 /* BaseCollectionViewController.h */,
-				3C1F871D203FC8CD00DEEE22 /* BaseCollectionViewController.m */,
-				3C1F871A203FC8CD00DEEE22 /* BaseControllerCollectionViewCell.h */,
-				3C1F8718203FC8CD00DEEE22 /* BaseControllerCollectionViewCell.m */,
-				3C1F8720203FC8CE00DEEE22 /* BaseSectionController.h */,
-				3C1F872C203FC8CE00DEEE22 /* BaseSectionController.m */,
-				3C1F871F203FC8CE00DEEE22 /* BaseViewModel.h */,
-				3C1F871B203FC8CD00DEEE22 /* BaseViewModel.m */,
+				3C1F871E203FC8CD00DEEE22 /* NMMVVMViewController.h */,
+				3C1F871C203FC8CD00DEEE22 /* NMCollectionViewCell.h */,
+				3C1F8719203FC8CD00DEEE22 /* NMCollectionViewCell.m */,
+				3C1F872D203FC8CE00DEEE22 /* NMCollectionViewController.h */,
+				3C1F871D203FC8CD00DEEE22 /* NMCollectionViewController.m */,
+				3C1F871A203FC8CD00DEEE22 /* NMControllerCollectionViewCell.h */,
+				3C1F8718203FC8CD00DEEE22 /* NMControllerCollectionViewCell.m */,
+				3C1F8720203FC8CE00DEEE22 /* NMSectionController.h */,
+				3C1F872C203FC8CE00DEEE22 /* NMSectionController.m */,
+				3C1F871F203FC8CE00DEEE22 /* NMViewModel.h */,
+				3C1F871B203FC8CD00DEEE22 /* NMViewModel.m */,
 				3C1F8721203FC8CE00DEEE22 /* Model */,
-				3C1F871E203FC8CD00DEEE22 /* MVVMViewController.h */,
 				3C1F872E203FC8CE00DEEE22 /* Utils */,
 				3C1F86F6203FC72F00DEEE22 /* NMMVVMKit.h */,
 				3C1F86F7203FC72F00DEEE22 /* Info.plist */,
@@ -153,14 +153,14 @@
 		3C1F8721203FC8CE00DEEE22 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				3C1F876D203FC91B00DEEE22 /* BaseDataModel.h */,
-				3C1F8722203FC8CE00DEEE22 /* BaseDataModel.m */,
-				3C1F8728203FC8CE00DEEE22 /* BaseSectionModel.h */,
-				3C1F8723203FC8CE00DEEE22 /* BaseSectionModel.m */,
-				3C1F8726203FC8CE00DEEE22 /* BaseDataCellModel.m */,
-				3C1F872A203FC8CE00DEEE22 /* BaseDataCellModel.h */,
-				3C1F8725203FC8CE00DEEE22 /* BaseCellModel.h */,
-				3C1F872B203FC8CE00DEEE22 /* BaseCellModel.m */,
+				3C1F876D203FC91B00DEEE22 /* NMDataModel.h */,
+				3C1F8722203FC8CE00DEEE22 /* NMDataModel.m */,
+				3C1F8728203FC8CE00DEEE22 /* NMSectionModel.h */,
+				3C1F8723203FC8CE00DEEE22 /* NMSectionModel.m */,
+				3C1F872A203FC8CE00DEEE22 /* NMDataCellModel.h */,
+				3C1F8726203FC8CE00DEEE22 /* NMDataCellModel.m */,
+				3C1F8725203FC8CE00DEEE22 /* NMCellModel.h */,
+				3C1F872B203FC8CE00DEEE22 /* NMCellModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -224,24 +224,24 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C1F8748203FC8CE00DEEE22 /* BaseCollectionViewCell.h in Headers */,
-				3C1F8746203FC8CE00DEEE22 /* BaseControllerCollectionViewCell.h in Headers */,
+				3C1F8748203FC8CE00DEEE22 /* NMCollectionViewCell.h in Headers */,
+				3C1F8746203FC8CE00DEEE22 /* NMControllerCollectionViewCell.h in Headers */,
 				3C1F86F8203FC72F00DEEE22 /* NMMVVMKit.h in Headers */,
-				3C1F8755203FC8CE00DEEE22 /* BaseDataCellModel.h in Headers */,
-				3C1F8753203FC8CE00DEEE22 /* BaseSectionModel.h in Headers */,
+				3C1F8755203FC8CE00DEEE22 /* NMDataCellModel.h in Headers */,
+				3C1F8753203FC8CE00DEEE22 /* NMSectionModel.h in Headers */,
 				3C1F8765203FC8CE00DEEE22 /* NSMutableArray+Move.h in Headers */,
 				3C1F875F203FC8CE00DEEE22 /* ValueChange.h in Headers */,
-				3C1F8758203FC8CE00DEEE22 /* BaseCollectionViewController.h in Headers */,
-				3C1F874A203FC8CE00DEEE22 /* MVVMViewController.h in Headers */,
+				3C1F8758203FC8CE00DEEE22 /* NMCollectionViewController.h in Headers */,
+				3C1F874A203FC8CE00DEEE22 /* NMMVVMViewController.h in Headers */,
 				3C1F875B203FC8CE00DEEE22 /* NSArray+Sequence.h in Headers */,
-				3C1F874B203FC8CE00DEEE22 /* BaseViewModel.h in Headers */,
+				3C1F874B203FC8CE00DEEE22 /* NMViewModel.h in Headers */,
 				3C1F8768203FC8CE00DEEE22 /* NSObject+ObservationManager.h in Headers */,
 				3C1F876A203FC8CE00DEEE22 /* Observable.h in Headers */,
-				3C1F8750203FC8CE00DEEE22 /* BaseCellModel.h in Headers */,
-				3C1F876F203FC91C00DEEE22 /* BaseDataModel.h in Headers */,
+				3C1F8750203FC8CE00DEEE22 /* NMCellModel.h in Headers */,
+				3C1F876F203FC91C00DEEE22 /* NMDataModel.h in Headers */,
 				3C1F8760203FC8CE00DEEE22 /* Observation.h in Headers */,
 				3C1F8761203FC8CE00DEEE22 /* EventPublisher.h in Headers */,
-				3C1F874C203FC8CE00DEEE22 /* BaseSectionController.h in Headers */,
+				3C1F874C203FC8CE00DEEE22 /* NMSectionController.h in Headers */,
 				3C1F8767203FC8CE00DEEE22 /* ObservationManager.h in Headers */,
 				3C1F875C203FC8CE00DEEE22 /* DynamicObservable.h in Headers */,
 				3C1F875A203FC8CE00DEEE22 /* NSString+UUID.h in Headers */,
@@ -357,24 +357,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C1F8756203FC8CE00DEEE22 /* BaseCellModel.m in Sources */,
-				3C1F8744203FC8CE00DEEE22 /* BaseControllerCollectionViewCell.m in Sources */,
-				3C1F874D203FC8CE00DEEE22 /* BaseDataModel.m in Sources */,
+				3C1F8756203FC8CE00DEEE22 /* NMCellModel.m in Sources */,
+				3C1F8744203FC8CE00DEEE22 /* NMControllerCollectionViewCell.m in Sources */,
+				3C1F874D203FC8CE00DEEE22 /* NMDataModel.m in Sources */,
 				3C1F876C203FC8CE00DEEE22 /* NSString+UUID.m in Sources */,
 				3C1F8759203FC8CE00DEEE22 /* NSArray+Sequence.m in Sources */,
-				3C1F874E203FC8CE00DEEE22 /* BaseSectionModel.m in Sources */,
+				3C1F874E203FC8CE00DEEE22 /* NMSectionModel.m in Sources */,
 				3C1F8763203FC8CE00DEEE22 /* NSObject+ObservationManager.m in Sources */,
-				3C1F8751203FC8CE00DEEE22 /* BaseDataCellModel.m in Sources */,
+				3C1F8751203FC8CE00DEEE22 /* NMDataCellModel.m in Sources */,
 				3C1F8764203FC8CE00DEEE22 /* DynamicObservable.m in Sources */,
 				3C1F8769203FC8CE00DEEE22 /* EventPublisher.m in Sources */,
-				3C1F8757203FC8CE00DEEE22 /* BaseSectionController.m in Sources */,
+				3C1F8757203FC8CE00DEEE22 /* NMSectionController.m in Sources */,
 				3C1F875D203FC8CE00DEEE22 /* NSMutableArray+Move.m in Sources */,
-				3C1F8747203FC8CE00DEEE22 /* BaseViewModel.m in Sources */,
+				3C1F8747203FC8CE00DEEE22 /* NMViewModel.m in Sources */,
 				3C1F875E203FC8CE00DEEE22 /* ObservationManager.m in Sources */,
-				3C1F8745203FC8CE00DEEE22 /* BaseCollectionViewCell.m in Sources */,
+				3C1F8745203FC8CE00DEEE22 /* NMCollectionViewCell.m in Sources */,
 				3C1F876B203FC8CE00DEEE22 /* Observation.m in Sources */,
 				3C1F8762203FC8CE00DEEE22 /* Observable.m in Sources */,
-				3C1F8749203FC8CE00DEEE22 /* BaseCollectionViewController.m in Sources */,
+				3C1F8749203FC8CE00DEEE22 /* NMCollectionViewController.m in Sources */,
 				3C1F8766203FC8CE00DEEE22 /* ValueChange.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

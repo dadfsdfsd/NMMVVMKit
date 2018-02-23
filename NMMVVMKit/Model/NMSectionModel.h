@@ -1,5 +1,5 @@
 //
-//  BaseSectionModel.h
+//  NMSectionModel.h
 //  MyIpadDemo
 //
 //  Created by yangfan on 2018/1/5.
@@ -9,19 +9,19 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <IGListKit/IGListKit.h>
-#import "BaseCellModel.h"
+#import "NMCellModel.h"
 
-@protocol BaseSectionModelDelegate
+@protocol NMSectionModelDelegate
 
 -(void)updateAnimated:(BOOL)animated onlySize:(BOOL)onlySize;
 
 @end
 
-@interface BaseSectionModel : NSObject<IGListDiffable, BaseCellModelContainer>
+@interface NMSectionModel : NSObject<IGListDiffable, NMCellModelContainer>
 
-@property (nonatomic, weak) id<BaseSectionModelDelegate> delegate;
+@property (nonatomic, weak) id<NMSectionModelDelegate> delegate;
 
-@property (nonatomic, strong) NSArray<id<BaseCellModel>>* cellModels;
+@property (nonatomic, strong) NSArray<id<NMCellModel>>* cellModels;
 
 @property (nonatomic, strong) id<NSObject> diffIdentifier;
 
@@ -31,11 +31,11 @@
 
 @property (nonatomic, assign) CGFloat minimumInteritemSpacing;
 
-@property (nonatomic, strong) id<BaseCellModel> headerCell;
+@property (nonatomic, strong) id<NMCellModel> headerCell;
 
-@property (nonatomic, strong) id<BaseCellModel> footerCell;
+@property (nonatomic, strong) id<NMCellModel> footerCell;
 
-+ (instancetype)sectionModelWithCellModels:(NSArray<id<BaseCellModel>> *)cellModels;
++ (instancetype)sectionModelWithCellModels:(NSArray<id<NMCellModel>> *)cellModels;
 
 - (void)didExitWorkingRange;
 

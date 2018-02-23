@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import <IGListKit/IGListKit.h>
-#import "BaseViewModel.h"
-#import "MVVMViewController.h"
+#import "NMViewModel.h"
+#import "NMMVVMViewController.h"
 
 
-@interface BaseCollectionViewController<__covariant ViewModelType: BaseViewModel *> : UIViewController<MVVMViewController>
+@interface NMCollectionViewController<__covariant ViewModelType: NMViewModel *> : UIViewController<NMMVVMViewController>
 
 @property (nonatomic, strong) ViewModelType viewModel;
 

@@ -1,5 +1,5 @@
 //
-//  BaseCellModel.h
+//  NMCellModel.h
 //  MyIpadDemo
 //
 //  Created by yangfan on 2018/1/5.
@@ -10,13 +10,13 @@
 #import <UIKit/UIKit.h>
 #import <IGListKit/IGListKit.h>
 
-@protocol BaseCellModelContainer<NSObject>
+@protocol NMCellModelContainer<NSObject>
 
 -(void)updateAnimated:(BOOL)animated onlySize:(BOOL)onlySize;
 
 @end
 
-@protocol BaseCellModel<NSObject, IGListDiffable>
+@protocol NMCellModel<NSObject, IGListDiffable>
 
 + (NSString *)cellIdentifier;
 
@@ -24,18 +24,18 @@
 
 - (CGSize)expectedSizeForContainerWidth:(CGFloat) containerWidth;
 
-- (id<BaseCellModelContainer>)container;
+- (id<NMCellModelContainer>)container;
 
-- (void)setContainer:(id<BaseCellModelContainer>)container;
+- (void)setContainer:(id<NMCellModelContainer>)container;
 
 @end
 
 
-@interface BaseCellModel : NSObject<BaseCellModel>
+@interface NMCellModel : NSObject<NMCellModel>
 
 @property (nonatomic, assign, readonly) CGSize cachedSize;
 
-@property (nonatomic, weak) id<BaseCellModelContainer> container;
+@property (nonatomic, weak) id<NMCellModelContainer> container;
 
 - (void)clearCachedSize;
 

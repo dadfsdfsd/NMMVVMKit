@@ -7,10 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "BaseCellModel.h"
+#import "NMCellModel.h"
 #import <IGListKit/IGListKit.h>
 
-@interface BaseDataCellModel<__covariant DataType: id<IGListDiffable>> : BaseCellModel
+@interface NMDataCellModel<__covariant DataType: id<IGListDiffable>> : NMCellModel
 
 @property (nonatomic, strong) DataType data;
 

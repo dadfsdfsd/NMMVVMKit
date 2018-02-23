@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <IGListKit/IGListKit.h>
-#import "BaseCellModel.h"
+#import "NMCellModel.h"
 
-@interface BaseCollectionViewCell : UICollectionViewCell
+@interface NMCollectionViewCell : UICollectionViewCell
 
 @property (nonatomic, strong, readonly) id cellModel;
 
